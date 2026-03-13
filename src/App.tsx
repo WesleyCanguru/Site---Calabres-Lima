@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Scale, Shield, Smartphone, Clock, CheckCircle, Star, MapPin, Mail, MessageCircle, Menu, X } from 'lucide-react';
+import { ArrowRight, Scale, Shield, Smartphone, Clock, CheckCircle, Star, MapPin, Mail, MessageCircle, Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const FadeIn = ({ children, delay = 0, className = "" }: any) => (
@@ -17,6 +17,30 @@ const FadeIn = ({ children, delay = 0, className = "" }: any) => (
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      q: "Tive minha conta bloqueada, o que fazer?",
+      a: "O primeiro passo é não se desesperar e não tentar resolver sozinho com o banco, pois isso pode gerar provas contra você. Reúna todos os extratos e prints que demonstram o bloqueio e entre em contato conosco imediatamente para analisarmos a legalidade da medida e buscarmos o desbloqueio judicial."
+    },
+    {
+      q: "Meu veículo foi apreendido, o que pode ser feito?",
+      a: "A busca e apreensão de veículos exige o cumprimento de requisitos legais estritos pelo banco. Muitas vezes há cobrança de juros abusivos ou falhas na notificação. Nossa equipe pode analisar o seu contrato e o processo para buscar a recuperação do veículo ou a redução da dívida."
+    },
+    {
+      q: "Meu plano de saúde negou o tratamento, há solução?",
+      a: "Sim. A negativa de tratamentos, cirurgias ou medicamentos prescritos pelo médico é frequentemente considerada abusiva pela Justiça, mesmo que não constem no rol da ANS. Podemos ingressar com uma ação judicial com pedido de liminar para garantir o seu direito à saúde o mais rápido possível."
+    },
+    {
+      q: "Bateram no meu carro, quais meus direitos?",
+      a: "Você tem direito à reparação integral dos danos materiais (conserto do veículo, despesas com transporte enquanto o carro está na oficina) e, dependendo do caso, danos morais e lucros cessantes (se você usa o carro para trabalhar). É fundamental registrar o boletim de ocorrência e reunir provas e testemunhas."
+    },
+    {
+      q: "Vocês garantem o resultado ou trabalham com 'causa ganha'?",
+      a: "A ética profissional da advocacia nos proíbe de prometer 'causa ganha' ou 'resultado garantido', pois toda decisão final depende do juiz. O que garantimos é o nosso compromisso inegociável com a excelência técnica, transparência, comunicação clara e a defesa incansável dos seus direitos em cada etapa do processo."
+    }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +67,7 @@ export default function App() {
             <a href="#sobre" className="text-sm tracking-wide hover:text-[#C5A059] transition-colors">O Escritório</a>
             <a href="#advogadas" className="text-sm tracking-wide hover:text-[#C5A059] transition-colors">As Advogadas</a>
             <a href="#areas" className="text-sm tracking-wide hover:text-[#C5A059] transition-colors">Áreas de Atuação</a>
+            <a href="#faq" className="text-sm tracking-wide hover:text-[#C5A059] transition-colors">FAQ</a>
             <a href="#contato" className="text-sm tracking-wide hover:text-[#C5A059] transition-colors">Contato</a>
           </div>
 
@@ -64,6 +89,7 @@ export default function App() {
             <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">O Escritório</a>
             <a href="#advogadas" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">As Advogadas</a>
             <a href="#areas" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">Áreas de Atuação</a>
+            <a href="#faq" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">FAQ</a>
             <a href="#contato" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">Contato</a>
             <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="mt-4 px-6 py-4 bg-[#1A222B] text-white text-center tracking-wide">
               Consulta Gratuita
@@ -134,7 +160,7 @@ export default function App() {
           <FadeIn>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80" 
+                src="https://i.postimg.cc/W1SRy0YH/1.png" 
                 alt="Detalhe escritório" 
                 className="w-full aspect-[4/5] object-cover"
               />
@@ -196,7 +222,7 @@ export default function App() {
             <FadeIn delay={0.1} className="group">
               <div className="overflow-hidden mb-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" 
+                  src="https://i.postimg.cc/dV5X6wDp/2.png" 
                   alt="Cynthia Calabres" 
                   className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -217,7 +243,7 @@ export default function App() {
             <FadeIn delay={0.2} className="group">
               <div className="overflow-hidden mb-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80" 
+                  src="https://i.postimg.cc/8C3Y84dN/3.png" 
                   alt="Gabriela Lima" 
                   className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -328,6 +354,45 @@ export default function App() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 md:py-32 bg-[#FCFAF8] px-6 md:px-12 border-t border-black/5">
+        <div className="max-w-4xl mx-auto">
+          <FadeIn className="text-center mb-16">
+            <span className="text-[#C5A059] text-xs font-medium tracking-[0.2em] uppercase mb-4 block">
+              Tire suas dúvidas
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">Perguntas Frequentes</h2>
+            <div className="w-12 h-[1px] bg-[#C5A059] mx-auto"></div>
+          </FadeIn>
+
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <div 
+                  className="bg-white border border-black/5 cursor-pointer transition-all duration-300 hover:border-[#C5A059]/30"
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                >
+                  <div className="p-6 flex justify-between items-center gap-4">
+                    <h3 className="font-serif text-lg text-[#1A222B]">{faq.q}</h3>
+                    <ChevronDown 
+                      className={`text-[#C5A059] shrink-0 transition-transform duration-300 ${openFaq === i ? 'rotate-180' : ''}`} 
+                      size={20} 
+                    />
+                  </div>
+                  <div 
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                  >
+                    <p className="p-6 pt-0 text-gray-600 font-light leading-relaxed border-t border-black/5 mt-4 pt-4">
+                      {faq.a}
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contato" className="py-24 md:py-32 bg-white px-6 md:px-12 border-t border-black/5">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
@@ -353,7 +418,7 @@ export default function App() {
                 <Mail className="text-[#C5A059] mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-serif text-xl mb-1">E-mail</h4>
-                  <a href="mailto:contato@calabreslima.adv.br" className="text-gray-500 font-light hover:text-[#C5A059] transition-colors">contato@calabreslima.adv.br</a>
+                  <a href="mailto:contato@calabreselimaadvocacia.com.br" className="text-gray-500 font-light hover:text-[#C5A059] transition-colors">contato@calabreselimaadvocacia.com.br</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -418,12 +483,12 @@ export default function App() {
             <ul className="space-y-3 font-light text-sm">
               <li><a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
               <li><a href="https://www.instagram.com/calabreselima.adv/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
-              <li><a href="mailto:contato@calabreslima.adv.br" className="hover:text-white transition-colors">E-mail</a></li>
+              <li><a href="mailto:contato@calabreselimaadvocacia.com.br" className="hover:text-white transition-colors">E-mail</a></li>
             </ul>
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 text-xs font-light flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2025 Calabres & Lima Advocacia e Consultoria Jurídica.</p>
+          <p>© 2026 Calabres & Lima Advocacia e Consultoria Jurídica.</p>
           <p>As informações contidas neste site têm caráter exclusivamente informativo.</p>
         </div>
       </footer>
