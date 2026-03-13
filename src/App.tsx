@@ -31,9 +31,12 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <a href="#" className="flex flex-col">
-            <span className="font-serif text-2xl tracking-wide text-[#1A222B]">Calabres & Lima</span>
-            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-[#C5A059]">Advocacia e Consultoria</span>
+          <a href="#" className="flex items-center">
+            <img 
+              src="https://i.postimg.cc/nzbxJnZq/Calabres-lima-logo-transparente.png" 
+              alt="Calabres & Lima" 
+              className="h-14 md:h-16 object-contain"
+            />
           </a>
           
           <div className="hidden md:flex items-center gap-8">
@@ -392,7 +395,11 @@ export default function App() {
       <footer className="bg-[#1A222B] text-white/50 py-16 px-6 md:px-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <span className="font-serif text-2xl text-white block mb-4">Calabres & Lima</span>
+            <img 
+              src="https://i.postimg.cc/nzbxJnZq/Calabres-lima-logo-transparente.png" 
+              alt="Calabres & Lima" 
+              className="h-20 object-contain mb-6"
+            />
             <p className="font-light text-sm max-w-sm mb-6 leading-relaxed">
               Um escritório de mulheres, construído sobre confiança, competência e comunicação clara. Defendemos os direitos das pessoas com dedicação e profissionalismo.
             </p>
