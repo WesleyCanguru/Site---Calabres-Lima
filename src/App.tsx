@@ -59,7 +59,7 @@ export default function App() {
             <img 
               src="https://i.postimg.cc/nzbxJnZq/Calabres-lima-logo-transparente.png" 
               alt="Calabres & Lima" 
-              className="h-14 md:h-16 object-contain"
+              className="h-16 md:h-20 object-contain"
             />
           </a>
           
@@ -73,7 +73,7 @@ export default function App() {
 
           <div className="hidden md:block">
             <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="px-6 py-3 border border-[#1A222B] text-sm tracking-wide hover:bg-[#1A222B] hover:text-white transition-all duration-300">
-              Consulta Gratuita
+              Agende sua Consulta
             </a>
           </div>
 
@@ -92,7 +92,7 @@ export default function App() {
             <a href="#faq" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">FAQ</a>
             <a href="#contato" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">Contato</a>
             <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="mt-4 px-6 py-4 bg-[#1A222B] text-white text-center tracking-wide">
-              Consulta Gratuita
+              Agende sua Consulta
             </a>
         </div>
       )}
@@ -111,7 +111,7 @@ export default function App() {
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-            Quando a justiça parece distante, o Calabres & Lima está ao seu lado. Advogadas comprometidas, comunicação clara e dedicação real em cada caso.
+            Quando a justiça parece distante, a Calabres & Lima está ao seu lado.<br className="hidden md:block" /> Advogadas comprometidas, comunicação clara e dedicação real em cada caso.
           </p>
         </FadeIn>
         <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4">
@@ -142,7 +142,7 @@ export default function App() {
               { icon: Scale, text: "Inscrição OAB ativa" },
               { icon: Shield, text: "Sigilo profissional garantido" },
               { icon: Smartphone, text: "Atendimento digital no Brasil" },
-              { icon: CheckCircle, text: "Análise gratuita do caso" },
+              { icon: CheckCircle, text: "Agendamento de consulta" },
               { icon: Clock, text: "Resposta em até 24 horas" }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.1} className="flex flex-col items-center md:items-start gap-3">
@@ -179,8 +179,8 @@ export default function App() {
                 Competência que transforma insegurança em proteção.
               </h2>
               <div className="w-12 h-[1px] bg-[#C5A059] mb-8"></div>
-              <p className="text-gray-600 mb-6 font-light leading-relaxed">
-                O Calabres & Lima nasceu com uma proposta clara: ser o escritório que as pessoas encontram quando mais precisam de ajuda — e no qual confiam para defender o que conquistaram.
+              <p className="text-gray-600 mb-6 font-light leading-relaxed text-justify">
+                Calabres & Lima nasceu com uma proposta clara: ser o escritório que as pessoas encontram quando mais precisam de ajuda e no qual confiam para defender o que conquistaram.
               </p>
               <p className="text-gray-600 mb-12 font-light leading-relaxed">
                 Acreditamos que o acesso à justiça não deve ser obscurecido por linguagem técnica ou burocracia desnecessária. Por isso, explicamos cada etapa do processo com clareza, mantemos nossos clientes informados e agimos com a firmeza que cada situação exige.
@@ -228,12 +228,12 @@ export default function App() {
                 />
               </div>
               <h3 className="font-serif text-3xl mb-2">Cynthia Calabres</h3>
-              <p className="text-[#C5A059] text-xs tracking-widest uppercase mb-6">OAB/SP · Advogada</p>
+              <p className="text-[#C5A059] text-xs tracking-widest uppercase mb-6">OAB/SP 313.669 – ADVOGADA</p>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Especialista em Direito Bancário e do Consumidor, Cynthia atua há mais de uma década defendendo clientes em situações de vulnerabilidade frente a instituições financeiras. Sua abordagem combina rigor técnico com uma comunicação que o cliente realmente entende.
+                Especialista em Direito Civil e Contratos, a Dra. Cynthia atua há mais de uma década na advocacia, dedicando-se à prevenção e à solução de conflitos jurídicos com técnica, estratégia e atenção às necessidades de cada cliente. Possui ampla experiência na elaboração, análise e revisão de contratos, bem como na condução de demandas judiciais nas áreas securitária, de Direito de Família e do Consumidor.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Bancário', 'Consumidor', 'Civil'].map(tag => (
+                {['Civil', 'Contratos', 'Securitário', 'Família', 'Consumidor'].map(tag => (
                   <span key={tag} className="text-xs border border-black/10 px-3 py-1 text-gray-500">{tag}</span>
                 ))}
               </div>
@@ -249,12 +249,12 @@ export default function App() {
                 />
               </div>
               <h3 className="font-serif text-3xl mb-2">Gabriela Lima</h3>
-              <p className="text-[#C5A059] text-xs tracking-widest uppercase mb-6">OAB/SP · Advogada</p>
+              <p className="text-[#C5A059] text-xs tracking-widest uppercase mb-6">OAB/SP 500.334 – ADVOGADA</p>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
-                Com expertise em Direito Trabalhista, de Família e Previdenciário, Gabriela construiu sua trajetória ao lado de quem mais precisa de proteção jurídica. Conhecida pela dedicação e pela clareza com que explica cada passo do processo aos seus clientes.
+                Com expertise em Direito Civil, de Família e Direito de Trânsito, a Dra. Gabriela construiu sua trajetória profissional pautada na dedicação à defesa dos direitos de seus clientes, atuando com responsabilidade, sensibilidade e rigor técnico na condução de demandas judiciais e na busca por soluções jurídicas eficazes.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Trabalhista', 'Família', 'Previdenciário'].map(tag => (
+                {['Civil', 'Família', 'Trânsito'].map(tag => (
                   <span key={tag} className="text-xs border border-black/10 px-3 py-1 text-gray-500">{tag}</span>
                 ))}
               </div>
@@ -307,7 +307,7 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-12 relative">
             <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-[1px] bg-white/10"></div>
             {[
-              { num: "01", title: "Análise Gratuita", desc: "Você nos conta sua situação. Fazemos uma análise inicial e avaliamos o melhor caminho jurídico." },
+              { num: "01", title: "Agendamento de Consulta", desc: "Você nos conta sua situação. Fazemos um agendamento para avaliar o melhor caminho jurídico." },
               { num: "02", title: "Estratégia Jurídica", desc: "Definimos juntos a estratégia mais adequada, com clareza sobre prazos, possibilidades e honorários." },
               { num: "03", title: "Atuação Dedicada", desc: "Nossa equipe conduz todas as etapas processuais com rigor técnico, mantendo você informada." },
               { num: "04", title: "Resolução", desc: "Trabalhamos para alcançar o melhor desfecho possível. Você sai com seus direitos protegidos." }
@@ -336,7 +336,7 @@ export default function App() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            { text: "Tinha minha conta bloqueada há duas semanas e não sabia o que fazer. O escritório entendeu minha situação na primeira conversa e resolveu tudo em menos de uma semana.", author: "Joaquina R.", role: "Recepcionista" },
+            { text: "Depois do acidente de trânsito que sofri, fiquei inseguro e sem saber como resolver a situação, principalmente diante da burocracia e da negativa da seguradora. Procurei o escritório e fui orientado com muita clareza desde o início. Com profissionalismo, conduziram todo o processo e consegui receber a indenização devida. Recomendo a quem precisa de apoio jurídico após um acidente.", author: "Joaquina R.", role: "Recepcionista" },
             { text: "Fui demitido e a empresa demorou meses para pagar o que me devia. Contratei o Calabres & Lima e, além de receber tudo, ainda ganhei uma indenização pelo atraso.", author: "Marcos A.", role: "Técnico de Manutenção" },
             { text: "Estava com medo de não conseguir minha aposentadoria por invalidez. O INSS tinha negado três vezes. Com o escritório, consegui na Justiça com direito a retroativos.", author: "Aparecida S.", role: "Costureira" }
           ].map((test, i) => (
@@ -400,7 +400,7 @@ export default function App() {
             <span className="text-[#C5A059] text-xs font-medium tracking-[0.2em] uppercase mb-4 block">
               Fale Conosco
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">Análise gratuita do seu caso</h2>
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">Agende sua Consulta</h2>
             <div className="w-12 h-[1px] bg-[#C5A059] mb-8"></div>
             <p className="text-gray-600 font-light leading-relaxed mb-12">
               Entendemos que buscar ajuda jurídica pode ser um passo delicado. Por isso, garantimos um atendimento acolhedor, sem julgamentos, com foco em entender a sua situação antes de qualquer coisa.
@@ -425,7 +425,7 @@ export default function App() {
                 <MapPin className="text-[#C5A059] mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-serif text-xl mb-1">Endereço</h4>
-                  <p className="text-gray-500 font-light">Rua Claudino Barbosa, nº 306<br/>Atendimento 100% digital em todo o Brasil</p>
+                  <p className="text-gray-500 font-light">Rua Claudino Barbosa, nº 306, Macedo, Guarulhos/SP<br/>Atendimento 100% digital em todo o Brasil</p>
                 </div>
               </div>
             </div>
@@ -448,7 +448,7 @@ export default function App() {
                   <textarea rows={4} className="w-full bg-transparent border-b border-black/20 pb-2 focus:outline-none focus:border-[#C5A059] transition-colors resize-none"></textarea>
                 </div>
                 <button className="w-full py-4 bg-[#1A222B] text-white tracking-wide hover:bg-[#C5A059] transition-colors duration-300 mt-4">
-                  Solicitar Análise
+                  Agendar Consulta
                 </button>
               </div>
             </form>
