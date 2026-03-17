@@ -59,7 +59,7 @@ export default function App() {
             <img 
               src="https://i.postimg.cc/nzbxJnZq/Calabres-lima-logo-transparente.png" 
               alt="Calabres & Lima" 
-              className="h-16 md:h-20 object-contain"
+              className="h-24 md:h-28 object-contain"
             />
           </a>
           
@@ -98,7 +98,7 @@ export default function App() {
       )}
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn>
           <span className="text-[#C5A059] text-xs md:text-sm font-medium tracking-[0.2em] uppercase mb-6 block">
             Advocacia Especializada
