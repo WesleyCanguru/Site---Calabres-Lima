@@ -126,8 +126,8 @@ export default function App() {
         <FadeIn delay={0.5} className="w-full mt-24">
           <div className="relative h-[40vh] md:h-[60vh] w-full overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" 
-              alt="Escritório elegante" 
+              src="https://i.postimg.cc/jS75FnSN/Calabres-Lima-Site.png" 
+              alt="Calabres & Lima Advocacia" 
               className="w-full h-full object-cover"
             />
           </div>
