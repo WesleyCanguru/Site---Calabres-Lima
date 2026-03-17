@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Scale, Shield, Smartphone, Clock, CheckCircle, Star, MapPin, Mail, MessageCircle, Menu, X, ChevronDown } from 'lucide-react';
+import { ArrowRight, Scale, Shield, Smartphone, Clock, CheckCircle, Star, MapPin, Mail, MessageCircle, Menu, X, ChevronDown, Instagram } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const FadeIn = ({ children, delay = 0, className = "" }: any) => (
@@ -72,7 +72,7 @@ export default function App() {
           </div>
 
           <div className="hidden md:block">
-            <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="px-6 py-3 border border-[#1A222B] text-sm tracking-wide hover:bg-[#1A222B] hover:text-white transition-all duration-300">
+            <a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="px-6 py-3 border border-[#1A222B] text-sm tracking-wide hover:bg-[#1A222B] hover:text-white transition-all duration-300">
               Agende sua Consulta
             </a>
           </div>
@@ -91,7 +91,7 @@ export default function App() {
             <a href="#areas" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">Áreas de Atuação</a>
             <a href="#faq" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">FAQ</a>
             <a href="#contato" onClick={() => setIsMenuOpen(false)} className="text-xl font-serif border-b border-black/10 pb-4">Contato</a>
-            <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="mt-4 px-6 py-4 bg-[#1A222B] text-white text-center tracking-wide">
+            <a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="mt-4 px-6 py-4 bg-[#1A222B] text-white text-center tracking-wide">
               Agende sua Consulta
             </a>
         </div>
@@ -115,7 +115,7 @@ export default function App() {
           </p>
         </FadeIn>
         <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4">
-          <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="px-8 py-4 bg-[#1A222B] text-white tracking-wide hover:bg-[#C5A059] transition-colors duration-300 flex items-center justify-center gap-2">
+          <a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="px-8 py-4 bg-[#1A222B] text-white tracking-wide hover:bg-[#C5A059] transition-colors duration-300 flex items-center justify-center gap-2">
             Falar com uma Advogada <ArrowRight size={18} />
           </a>
           <a href="#areas" className="px-8 py-4 border border-black/10 tracking-wide hover:border-[#1A222B] transition-colors duration-300 flex items-center justify-center">
@@ -285,7 +285,7 @@ export default function App() {
             <FadeIn key={i} delay={i * 0.1} className="group border-t border-black/10 pt-8">
               <h3 className="font-serif text-2xl mb-4 group-hover:text-[#C5A059] transition-colors">{area.title}</h3>
               <p className="text-gray-500 font-light text-sm leading-relaxed mb-6">{area.desc}</p>
-              <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-medium hover:text-[#C5A059] transition-colors">
+              <a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-medium hover:text-[#C5A059] transition-colors">
                 Consultar <ArrowRight size={14} />
               </a>
             </FadeIn>
@@ -411,7 +411,7 @@ export default function App() {
                 <MessageCircle className="text-[#C5A059] mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-serif text-xl mb-1">WhatsApp</h4>
-                  <a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="text-gray-500 font-light hover:text-[#C5A059] transition-colors">Iniciar conversa</a>
+                  <a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="text-gray-500 font-light hover:text-[#C5A059] transition-colors">Iniciar conversa</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -461,14 +461,17 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <img 
-              src="https://i.postimg.cc/nzbxJnZq/Calabres-lima-logo-transparente.png" 
+              src="https://i.postimg.cc/Y0jZykRP/Calabres-lima-logo-dourado-transparente.png" 
               alt="Calabres & Lima" 
-              className="h-20 object-contain mb-6"
+              className="h-24 md:h-28 object-contain mb-8"
             />
-            <p className="font-light text-sm max-w-sm mb-6 leading-relaxed">
-              Um escritório de mulheres, construído sobre confiança, competência e comunicação clara. Defendemos os direitos das pessoas com dedicação e profissionalismo.
+            <p className="font-light text-sm max-w-sm mb-8 leading-relaxed">
+              Um escritório de mulheres, construído com confiança, competência e comunicação clara. Defendendo os direitos das pessoas com dedicação e profissionalismo.
             </p>
-            <p className="text-xs tracking-widest uppercase">OAB/SP · CNPJ: 00.000.000/0001-00</p>
+            <a href="https://www.instagram.com/calabreselima.adv/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-white/50 hover:text-[#C5A059] transition-colors">
+              <Instagram size={28} />
+              <span className="text-base font-light">@calabreselima.adv</span>
+            </a>
           </div>
           <div>
             <h4 className="text-white font-serif text-lg mb-6">Links</h4>
@@ -481,7 +484,7 @@ export default function App() {
           <div>
             <h4 className="text-white font-serif text-lg mb-6">Contato</h4>
             <ul className="space-y-3 font-light text-sm">
-              <li><a href="https://wa.link/47utfa" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
+              <li><a href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
               <li><a href="https://www.instagram.com/calabreselima.adv/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
               <li><a href="mailto:contato@calabreselimaadvocacia.com.br" className="hover:text-white transition-colors">E-mail</a></li>
             </ul>
@@ -489,13 +492,15 @@ export default function App() {
         </div>
         <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 text-xs font-light flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© 2026 Calabres & Lima Advocacia e Consultoria Jurídica.</p>
-          <p>As informações contidas neste site têm caráter exclusivamente informativo.</p>
+          <p>
+            Site desenvolvido por <a href="https://cangurudigital.com.br/" target="_blank" rel="noreferrer" className="hover:text-[#C5A059] transition-colors">Canguru Digital</a> e <a href="https://kanoastudio.com/" target="_blank" rel="noreferrer" className="hover:text-[#C5A059] transition-colors">Kanoa Studio</a>
+          </p>
         </div>
       </footer>
 
       {/* Floating WhatsApp */}
       <a 
-        href="https://wa.link/47utfa" 
+        href="https://wa.me/5511926199897?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Calabres%20%26%20Lima%20Advocacia%20e%20gostaria%20do%20servi%C3%A7o%20de%20voc%C3%AAs." 
         target="_blank" 
         rel="noreferrer"
         className="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center"
