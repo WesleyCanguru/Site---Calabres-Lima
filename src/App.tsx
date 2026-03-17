@@ -110,8 +110,8 @@ export default function App() {
           </h1>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-            Quando a justiça parece distante, a Calabres & Lima está ao seu lado.<br className="hidden md:block" /> Advogadas comprometidas, comunicação clara e dedicação real em cada caso.
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed text-balance">
+            Quando a justiça parece distante, a Calabres & Lima está ao seu lado. Advogadas comprometidas, comunicação clara e dedicação real em cada caso.
           </p>
         </FadeIn>
         <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4">
