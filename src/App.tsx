@@ -160,7 +160,7 @@ export default function App() {
           <FadeIn>
             <div className="relative">
               <img 
-                src="https://i.postimg.cc/VkskRZbW/IMG-7486.png" 
+                src="https://i.postimg.cc/rpMKwP12/IMG-7677.png" 
                 alt="Detalhe escritório" 
                 className="w-full aspect-[4/5] object-cover"
               />
