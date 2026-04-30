@@ -52,6 +52,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#FCFAF8] text-[#1A222B] font-sans selection:bg-[#C5A059] selection:text-white">
+      {/* Debug Message */}
+      <div className="hidden">System Ready</div>
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
